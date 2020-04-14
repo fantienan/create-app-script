@@ -6,11 +6,11 @@
 ## 使用
 ### 使用npx每次运行命令都会拉取最新的create-app
 ```
-npx create-app <项目名称>
+npx create-app-script <项目名称>
 ```
 ### 使用全局安装，缺点再次使用时不会更新最新的create-app
 ```
-yarn add create-app -g
+yarn add create-app-script -g
 ```
 
 
