@@ -1,0 +1,43 @@
+{
+  "name": "create-app-script",
+  "version": "1.0.0",
+  "bin": {
+    "create-app-script": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react"
+  ],
+  "files": [
+    "index.js",
+    "createApp.js"
+  ],
+  "description": "创建一个react 应用",
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=8"
+  },
+  "dependencies": {
+    "chalk": "3.0.0",
+    "commander": "4.1.0",
+    "fs-extra": "8.1.0",
+    "semver": "^7.3.0",
+    "shelljs": "^0.8.3",
+    "validate-npm-package-name": "^3.0.0"
+  },
+  "development-template": {
+    "repoName": "development-templates",
+    "repo": "https://github.com/fantienan/development-templates.git"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "3.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
