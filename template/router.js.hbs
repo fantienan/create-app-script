@@ -1,0 +1,23 @@
+// 路由配置
+export const routers = [
+  {
+    key: 'example',
+    name: 'example',
+    to: '/example',
+    path: '/example',
+    component: "pages/Example",
+    exact: true,
+    children: [],
+  },
+  {{#each list}}
+  { 
+    key: '{{key}}',
+    name: '{{name}}',
+    to: '{{to}}',
+    path: '{{path}}',
+    component: '{{component}}',
+    exact: true,
+    children: [] 
+  },
+  {{/each}}
+]
