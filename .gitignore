@@ -21,7 +21,6 @@ node_modules/
 .buildpath
 .settings
 npm-debug.log
-/lib
 /es
 /.vscode/
 yarn.lock
