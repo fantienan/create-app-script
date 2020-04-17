@@ -1,0 +1,14 @@
+// 状态管理
+import { observable, action, runInAction } from 'mobx'
+
+export default class {{componentName}}Store {
+    @observable count = 1
+
+    @action add() {
+        this.count += 1
+    }
+
+    destroy() {
+        this.count = 1
+    }
+}

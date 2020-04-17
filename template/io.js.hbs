@@ -1,0 +1,12 @@
+
+import ioContext from 'io-context';
+
+ioContext.create('{{name}}', {
+    testName: {
+        url: '/api/...',
+        method: "POST",
+        formData: true
+    }
+})
+export default ioContext.api.{{name}}
+

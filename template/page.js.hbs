@@ -1,8 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useLocalStore } from 'mobx-react'
+import io from './io'
+import {{componentName}}Store from './store'
 
-export default function {{name}}() {
+export default function {{componentName}}(props) {
+  const store = useLocalStore(() => new {{componentName}}Store())
+  useEffect(() => {
+    return () => {
+      store.destroy()
+    }
+  })
   return (
-    <div>
+    <div className="{{name}}-page">
       {{name}} page
     </div>
   )
