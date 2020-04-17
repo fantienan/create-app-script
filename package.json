@@ -1,6 +1,6 @@
 {
   "name": "create-app-script",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "bin": {
     "create-app-script": "./bin/index.js"
   },
@@ -8,8 +8,9 @@
     "react"
   ],
   "files": [
-    "index.js",
-    "createApp.js"
+    "bin",
+    "lib",
+    "template"
   ],
   "description": "创建一个react 应用",
   "author": "",
@@ -19,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/facebook/create-app-script.git"
+    "url": "https://github.com/fantienan/create-app-script.git"
   },
   "dependencies": {
     "chalk": "3.0.0",
