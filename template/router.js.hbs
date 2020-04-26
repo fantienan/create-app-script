@@ -1,14 +1,19 @@
 // 路由配置
-export const routers = [
-  {
-    key: 'example',
-    name: 'example',
-    to: '/example',
-    path: '/example',
-    component: "pages/Example",
-    exact: true,
-    children: [],
-  },
+export interface Routers {
+  key: string
+  name?: string
+  to?: string
+  path: string
+  component: string | (() => any)
+  exact?: boolean
+  wrappers?: string[]
+  redirect?: string
+  routes?: any[]
+  [k: string]: any
+}
+
+export const routers: Routers[] = [
+  /* @create-app-script-split-start*/
   {{#each list}}
   { 
     key: '{{key}}',
@@ -17,7 +22,27 @@ export const routers = [
     path: '{{path}}',
     component: '{{component}}',
     exact: true,
-    children: [] 
+    {{#if popover}}
+    popover: {{popover}},
+    {{/if}}
+    {{#if routes.length}}
+    routes: [
+    {{#each routes}}
+      { 
+        key: '{{key}}',
+        name: '{{name}}',
+        to: '{{to}}',
+        path: '{{path}}',
+        component: '{{component}}',
+        exact: true,
+        {{#if popover}}
+        popover: {{popover}}
+        {{/if}}
+      },
+    {{/each}}
+    ]
+    {{/if}}
   },
   {{/each}}
+  /* @create-app-script-split-end*/
 ]

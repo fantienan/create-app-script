@@ -41,14 +41,6 @@
     "default-template": {
       "repoName": "development-templates",
       "repo": "https://github.com/fantienan/development-templates.git"
-    },
-    "template-1": {
-      "repoName": "",
-      "repo": ""
-    },
-    "template-2": {
-      "repoName": "",
-      "repo": ""
     }
   },
   "devDependencies": {
